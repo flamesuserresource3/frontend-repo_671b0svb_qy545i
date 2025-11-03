@@ -3,7 +3,55 @@
 > vite
 
 
-  VITE v5.4.20  ready in 408 ms
+  VITE v5.4.20  ready in 220 ms
 
   ➜  Local:   http://localhost:3000/
   ➜  Network: http://172.20.0.196:3000/
+3:37:09 PM [vite] Pre-transform error: Transform failed with 1 error:
+/home/workspace/src/components/Hero.jsx:35:40: ERROR: Expected ")" but found "as"
+3:37:09 PM [vite] Internal server error: Transform failed with 1 error:
+/home/workspace/src/components/Hero.jsx:35:40: ERROR: Expected ")" but found "as"
+  Plugin: vite:esbuild
+  File: /home/workspace/src/components/Hero.jsx:35:40
+  
+  Expected ")" but found "as"
+  33 |          className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 pt-32 pb-24 grid md:grid-cols-12 gap-10 items-center"
+  34 |          onMouseMove={(e) => {
+  35 |            const rect = (e.currentTarget as HTMLDivElement).getBoundingClientRect();
+     |                                          ^
+  36 |            const x = (e.clientX - rect.left) / rect.width;
+  37 |            const y = (e.clientY - rect.top) / rect.height;
+  
+      at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
+      at /home/workspace/node_modules/esbuild/lib/main.js:755:50
+      at responseCallbacks.<computed> (/home/workspace/node_modules/esbuild/lib/main.js:622:9)
+      at handleIncomingPacket (/home/workspace/node_modules/esbuild/lib/main.js:677:12)
+      at Socket.readFromStdout (/home/workspace/node_modules/esbuild/lib/main.js:600:7)
+      at Socket.emit (node:events:508:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+3:37:31 PM [vite] Internal server error: Transform failed with 1 error:
+/home/workspace/src/components/Hero.jsx:35:40: ERROR: Expected ")" but found "as"
+  Plugin: vite:esbuild
+  File: /home/workspace/src/components/Hero.jsx:35:40
+  
+  Expected ")" but found "as"
+  33 |          className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 pt-32 pb-24 grid md:grid-cols-12 gap-10 items-center"
+  34 |          onMouseMove={(e) => {
+  35 |            const rect = (e.currentTarget as HTMLDivElement).getBoundingClientRect();
+     |                                          ^
+  36 |            const x = (e.clientX - rect.left) / rect.width;
+  37 |            const y = (e.clientY - rect.top) / rect.height;
+  
+      at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
+      at /home/workspace/node_modules/esbuild/lib/main.js:755:50
+      at responseCallbacks.<computed> (/home/workspace/node_modules/esbuild/lib/main.js:622:9)
+      at handleIncomingPacket (/home/workspace/node_modules/esbuild/lib/main.js:677:12)
+      at Socket.readFromStdout (/home/workspace/node_modules/esbuild/lib/main.js:600:7)
+      at Socket.emit (node:events:508:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
