@@ -32,7 +32,7 @@ export default function Hero() {
       <div
         className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 pt-32 pb-24 grid md:grid-cols-12 gap-10 items-center"
         onMouseMove={(e) => {
-          const rect = (e.currentTarget as HTMLDivElement).getBoundingClientRect();
+          const rect = e.currentTarget.getBoundingClientRect();
           const x = (e.clientX - rect.left) / rect.width;
           const y = (e.clientY - rect.top) / rect.height;
           setMouse({ x, y });
